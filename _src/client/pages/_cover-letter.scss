@@ -1,0 +1,12 @@
+.freeman-cover-letter--signature-block {
+  text-align: right;
+}
+
+.freeman-cover-letter--name,
+.freeman-cover-letter--title {
+  #content_editor &,
+  .pdf-page-content & {
+    margin-bottom: 0;
+    font-size: 0.9em !important;
+  }
+}
