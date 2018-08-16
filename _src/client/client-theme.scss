@@ -9,11 +9,15 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 */
 
 // modules
-@import 'modules/bracket';
+@import
+  'modules/bracket',
+  'modules/full-bleed';
 
 
 // pages
-@import 'pages/cover-letter';
+@import
+  'pages/cover-letter',
+  'pages/cover-page';
 
 
 @import 

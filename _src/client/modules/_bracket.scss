@@ -1,33 +1,33 @@
-.freeman-bracket {
+@mixin bracket($border-color) {
+
   #content_editor &,
   .pdf-page-content & {
     display: table;
     width: 100%;
-    border-top: 1px solid $base-text-color;
-    border-left: 4px solid $base-text-color;
-    border-right: 1px solid $base-text-color;
+    border-top: 1px solid $border-color;
+    border-left: 4px solid $border-color;
+    border-right: 1px solid $border-color;
     padding: 0 8px;
     margin: 15px 0 40px;
   }
-}
 
-.freeman-bracket--first,
-.freeman-bracket--second {
-  #content_editor &,
-  .pdf-page-content & {
-    display: table-cell;
-    vertical-align: top;
-    padding: 8px 0 0;
+  .freeman-bracket--first,
+  .freeman-bracket--second {
+    #content_editor &,
+    .pdf-page-content & {
+      display: table-cell;
+    }
   }
-}
 
-.freeman-bracket--first {
-  #content_editor &,
-  .pdf-page-content & {
-    width: 25%;
-    min-width: 150px;
-    border-right: 1px solid $base-text-color;
+  .freeman-bracket--first {
+    #content_editor &,
+    .pdf-page-content & {
+      width: 25%;
+      // min-width: 150px;
+      border-right: 1px solid $border-color;
+    }
   }
+
 }
 
 .freeman-bracket--second {
@@ -39,4 +39,12 @@
     font-style: italic;
     font-size: 0.85em !important;
   }
+}
+
+.freeman-bracket {
+  @include bracket($base-text-color);
+}
+
+.freeman-bracket--white {
+  @include bracket(#fff);
 }

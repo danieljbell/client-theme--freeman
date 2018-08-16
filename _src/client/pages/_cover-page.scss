@@ -1,0 +1,56 @@
+@mixin cover-page($overlay-color) {
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 350px;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-color: $overlay-color;
+    opacity: 0.5;
+  }
+}
+
+.freeman-page--dark-cover-page {
+  background-image: url(/img/dark-cover-page-bg.png);
+  @include cover-page(#000);
+}
+
+.freeman-page--brand-cover-page {
+  background-image: url(/img/brand-cover-page-bg.png);
+  @include cover-page($brand);
+  &:after {
+    opacity: 0.8;
+  }
+}
+
+.freeman-page-cover-page--logo-container {
+  #content_editor &,
+  .pdf-page-content & {
+    padding: 20px 30px !important;
+  }
+}
+
+.freeman-page-cover-page--content-container {
+  #content_editor &,
+  .pdf-page-content & {
+    border-left: 1px solid rgba(white, 0.5);
+    padding: 20px 40px 0 !important;
+    * {
+      color: #fff !important;
+    }
+  }
+}
+
+.freeman-page-cover-page--date {
+  #content_editor &,
+  .pdf-page-content & {
+    margin-top: 150px;
+  }
+}
