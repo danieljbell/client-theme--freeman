@@ -12,7 +12,7 @@ $brand-three: $brand;    // Light Green
 $base-text-color: #000;
 $base-heading-color: #000;
 $base-link-color: $brand-two;
-$base-font-family: 'Source Sans Pro';
+$base-font-family: 'Arial';
 
 // =================================
 // THEME BUILDER ADVANCED TYPOGRAPHY
@@ -20,10 +20,10 @@ $base-font-family: 'Source Sans Pro';
 
 // HEADING ONE
 $heading-one-text-color: $base-heading-color;
-$heading-one-font-family: $base-font-family;
+$heading-one-font-family: 'Arial';
 $heading-one-font-size: 36px;
 $heading-one-line-height: 40px;
-$heading-one-font-weight: 300;
+$heading-one-font-weight: 700;
 $heading-one-margin: 0 0 0 0;
 
 
@@ -75,7 +75,7 @@ $heading-six-margin: 0 0 0 0;
 // PARAGRAPH
 $paragraph-text-color: $base-text-color;
 $paragraph-font-family: $base-font-family;
-$paragraph-font-size: 18px;
+$paragraph-font-size: 16spx;
 $paragraph-line-height: 24px;
 $paragraph-font-weight: 300;
 $paragraph-margin: 0 0 24px 0;

@@ -1,0 +1,56 @@
+.freeman-page--table-of-contents {
+  #content_editor &,
+  .pdf-page-content & {
+    background-image: url('../img/rocket.png');
+    background-repeat: no-repeat;
+    background-size: 275px;
+    background-position: -35px 150px;
+  }
+}
+
+.freeman-table-of-contents--heading {
+  
+  #content_editor &,
+  .pdf-page-content & {
+    font-weight: normal;
+    color: $brand;
+    font-style: italic;
+    font-size: 36px;
+  }  
+
+}
+
+.freeman-table-of-contents--list {
+  counter-reset: toc-items;
+}
+
+.freeman-table-of-contents--item {
+  list-style-type: none;
+  position: relative;
+  counter-increment: toc-items;
+
+  #content_editor &,
+  .pdf-page-content & {
+    color: $brand;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  &:before {
+    content: counter(toc-items)'.';
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  span {
+    #content_editor &,
+    .pdf-page-content & {
+      float: right;
+    }
+  }
+
+}

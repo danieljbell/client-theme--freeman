@@ -2,12 +2,12 @@
 
   #content_editor &,
   .pdf-page-content & {
-    display: table;
-    width: 100%;
+    // display: table;
+    // width: 100%;
     border-top: 1px solid $border-color;
     border-left: 4px solid $border-color;
     border-right: 1px solid $border-color;
-    padding: 0 8px;
+    // padding: 0 8px;
     margin: 15px 0 40px;
   }
 
@@ -15,16 +15,19 @@
   .freeman-bracket--second {
     #content_editor &,
     .pdf-page-content & {
-      display: table-cell;
+      padding: 5px 10px 0 !important;
     }
   }
 
   .freeman-bracket--first {
     #content_editor &,
     .pdf-page-content & {
-      width: 25%;
+      // width: 25%;
       // min-width: 150px;
       border-right: 1px solid $border-color;
+      img {
+        max-width: 100px;
+      }
     }
   }
 
