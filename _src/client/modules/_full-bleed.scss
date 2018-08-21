@@ -6,3 +6,42 @@
   width: calc(100% + 60px);
   padding: 20px 30px;
 }
+
+.freeman-full-bleed {
+  position: relative;
+  left: -30px;
+  width: calc(100% + 60px);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.freeman-bg--yellow {
+  background-color: $brand-two;
+}
+
+@mixin splitPage($color) {
+  position: relative;
+  top: -20px;
+  margin-bottom: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: -30px;
+    top: 0;
+    bottom: 0;
+    background-color: $color;
+    z-index: -1;
+  }
+}
+
+.freeman-split-page--blue {
+  @include splitPage(#90CFF2);
+}
+
+.freeman-split-page--green {
+  @include splitPage(#B0D235);
+}

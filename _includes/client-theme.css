@@ -13,6 +13,26 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-bracket--white .freeman-bracket--first, .pdf-page-content .freeman-bracket--white .freeman-bracket--first { border-right: 1px solid #fff; }
 #content_editor .freeman-bracket--white .freeman-bracket--first img, .pdf-page-content .freeman-bracket--white .freeman-bracket--first img { max-width: 100px; }
 .freeman--full-bg { position: relative; top: -20px; left: -30px; margin-bottom: -20px; width: calc(100% + 60px); padding: 20px 30px; }
+.freeman-full-bleed { position: relative; left: -30px; width: calc(100% + 60px); padding-left: 30px; padding-right: 30px; }
+.freeman-bg--yellow { background-color: #FFDD00; }
+.freeman-split-page--blue { position: relative; top: -20px; margin-bottom: -20px; padding-top: 20px; padding-bottom: 20px; z-index: 1; }
+.freeman-split-page--blue:after { content: ''; position: absolute; left: 50%; right: -30px; top: 0; bottom: 0; background-color: #90CFF2; z-index: -1; }
+.freeman-split-page--green { position: relative; top: -20px; margin-bottom: -20px; padding-top: 20px; padding-bottom: 20px; z-index: 1; }
+.freeman-split-page--green:after { content: ''; position: absolute; left: 50%; right: -30px; top: 0; bottom: 0; background-color: #B0D235; z-index: -1; }
+.freeman-pill--dark-blue { background-color: #0066B3; border-radius: 200px; color: #fff; text-align: center; padding-top: 15px !important; padding-bottom: 15px !important; }
+#content_editor .freeman-pill--dark-blue, .pdf-page-content .freeman-pill--dark-blue { font-size: 0.85em; }
+.freeman-pill--light-blue { background-color: #14B1E7; border-radius: 200px; color: #fff; text-align: center; padding-top: 15px !important; padding-bottom: 15px !important; }
+#content_editor .freeman-pill--light-blue, .pdf-page-content .freeman-pill--light-blue { font-size: 0.85em; }
+.freeman-pill--green { background-color: #B0D235; border-radius: 200px; color: #fff; text-align: center; padding-top: 15px !important; padding-bottom: 15px !important; }
+#content_editor .freeman-pill--green, .pdf-page-content .freeman-pill--green { font-size: 0.85em; }
+.freeman-pill--orange { background-color: #FF9933; border-radius: 200px; color: #fff; text-align: center; padding-top: 15px !important; padding-bottom: 15px !important; }
+#content_editor .freeman-pill--orange, .pdf-page-content .freeman-pill--orange { font-size: 0.85em; }
+.freeman-pill--gray { background-color: #CACACA; border-radius: 200px; color: #fff; text-align: center; padding-top: 15px !important; padding-bottom: 15px !important; }
+#content_editor .freeman-pill--gray, .pdf-page-content .freeman-pill--gray { font-size: 0.85em; }
+#content_editor .freeman-pills, .pdf-page-content .freeman-pills { padding-left: 0; }
+#content_editor .freeman-pills > li, .pdf-page-content .freeman-pills > li { margin-bottom: 10px; }
+#content_editor .freeman-pills > li > div:first-child, .pdf-page-content .freeman-pills > li > div:first-child { font-size: 1.2em; text-align: right; }
+#content_editor .freeman-stat span, .pdf-page-content .freeman-stat span { font-size: 2em !important; }
 #content_editor .freeman-cover-letter--signature-block, .pdf-page-content .freeman-cover-letter--signature-block { text-align: right; }
 #content_editor .freeman-cover-letter--signature-block .grid, .pdf-page-content .freeman-cover-letter--signature-block .grid { text-align: left; }
 #content_editor .freeman-cover-letter--name, .pdf-page-content .freeman-cover-letter--name, #content_editor .freeman-cover-letter--title, .pdf-page-content .freeman-cover-letter--title { margin-bottom: 0; font-size: 0.9em !important; }
@@ -29,16 +49,24 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 .freeman-page--quote-bg { background-size: cover; background-position: center; min-height: 500px; display: table; }
 #content_editor .freeman-page--quote-bg h1, .pdf-page-content .freeman-page--quote-bg h1 { display: table-cell; vertical-align: middle; font-size: 42px; line-height: 50px; margin: 0 !important; color: #fff; font-style: italic; font-weight: normal; }
 #content_editor .freeman-page--quote-bg h1 span, .pdf-page-content .freeman-page--quote-bg h1 span { display: block; width: 65%; }
-#content_editor .freeman-page--table-of-contents, .pdf-page-content .freeman-page--table-of-contents { background-image: url("../img/rocket.png"); background-repeat: no-repeat; background-size: 275px; background-position: -35px 150px; }
+#content_editor .freeman-page--table-of-contents, .pdf-page-content .freeman-page--table-of-contents { background-image: url("../img/rocket.png"); background-repeat: no-repeat; background-size: 275px; background-position: -35px 150%; min-height: 400px; }
 #content_editor .freeman-table-of-contents--heading, .pdf-page-content .freeman-table-of-contents--heading { font-weight: normal; color: #0066B3; font-style: italic; font-size: 36px; }
 .freeman-table-of-contents--list { counter-reset: toc-items; }
 .freeman-table-of-contents--item { list-style-type: none; position: relative; counter-increment: toc-items; }
 #content_editor .freeman-table-of-contents--item, .pdf-page-content .freeman-table-of-contents--item { color: #0066B3; font-style: italic; margin-bottom: 15px; font-size: 20px; }
 .freeman-table-of-contents--item:before { content: counter(toc-items) "."; position: absolute; left: -20px; top: -5px; font-size: 24px; color: #000; }
 #content_editor .freeman-table-of-contents--item span, .pdf-page-content .freeman-table-of-contents--item span { float: right; }
+#content_editor .freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center p, .pdf-page-content .freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center p { font-size: 0.85em; font-style: italic; }
+.freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center img { max-width: 100px; max-height: 100px; }
+.freeman-page--stats .freeman-has-text-white { text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); }
+#content_editor .freeman-branch-profile, .pdf-page-content .freeman-branch-profile { padding-left: 20px !important; }
+#content_editor .freeman-branch-profile *, .pdf-page-content .freeman-branch-profile * { color: #fff; }
+#content_editor .freeman-branch-profile hr, .pdf-page-content .freeman-branch-profile hr { background-color: transparent; border: 0; border-top: 1px solid #fff; margin: 18px 0; }
+#content_editor .freeman-page--team .freeman-team-member img, .pdf-page-content .freeman-page--team .freeman-team-member img { max-width: 140px; max-width: 140px; }
 .freeman-has-text-white { color: #fff !important; }
 .freeman-has-text-brand { color: #0066B3 !important; }
-.freeman-has-text-brand-two { color: #0066B3 !important; }
+.freeman-has-text-brand-two { color: #FFDD00 !important; }
+.freeman-has-text-center { text-align: center !important; }
 .freeman-pad-y { padding-top: 30px !important; padding-bottom: 30px !important; }
 .freeman-pad-y-more { padding-top: 60px !important; padding-bottom: 60px !important; }
 .freeman-pad-t { padding-top: 30px !important; }
@@ -65,6 +93,7 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 .freeman-mar-r { margin-right: 30px !important; }
 .freeman-mar-r-more { margin-right: 60px !important; }
 .freeman-b-a { border: 1px solid #fff; }
+@media screen and (max-width: 735px) { #content_editor .freeman-pills > li > div:first-child, .pdf-page-content .freeman-pills > li > div:first-child { text-align: center; } }
 @media screen and (max-width: 568px) { .freeman-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
 
 /*# sourceMappingURL=client-theme.css.map */

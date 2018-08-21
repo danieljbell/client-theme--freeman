@@ -4,7 +4,8 @@
     background-image: url('../img/rocket.png');
     background-repeat: no-repeat;
     background-size: 275px;
-    background-position: -35px 150px;
+    background-position: -35px 150%;
+    min-height: 400px;
   }
 }
 
@@ -53,4 +54,17 @@
     }
   }
 
+}
+
+.freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center p {
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.85em;
+    font-style: italic;
+  }
+}
+
+.freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center img {
+  max-width: 100px;
+  max-height: 100px;
 }

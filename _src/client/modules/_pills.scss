@@ -1,0 +1,59 @@
+@mixin pill($color) {
+  background-color: $color;
+  border-radius: 200px;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.85em;
+  }
+}
+
+.freeman-pill--dark-blue {
+  @include pill(#0066B3);
+}
+
+.freeman-pill--light-blue {
+  @include pill(#14B1E7); 
+}
+
+.freeman-pill--green {
+  @include pill(#B0D235); 
+}
+
+.freeman-pill--orange {
+  @include pill(#FF9933);  
+}
+
+.freeman-pill--gray {
+  @include pill(#CACACA);
+}
+
+.freeman-pills {
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0;
+  }
+}
+
+.freeman-pills > li {
+  #content_editor &,
+  .pdf-page-content & {
+    margin-bottom: 10px;
+  }
+  
+  > div:first-child {
+    #content_editor &,
+    .pdf-page-content & {
+      font-size: 1.2em;
+      text-align: right;
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+}

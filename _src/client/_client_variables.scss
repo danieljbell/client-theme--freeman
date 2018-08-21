@@ -2,7 +2,7 @@
 // CLIENT BRAND COLORS
 // ==============================
 $brand: #0066B3;       // Blue
-$brand-two: $brand;      // Red
+$brand-two: #FFDD00;      // Red
 $brand-three: $brand;    // Light Green
 
 
@@ -59,7 +59,7 @@ $heading-five-text-color: $base-heading-color;
 $heading-five-font-family: $base-font-family;
 $heading-five-font-size: 18px;
 $heading-five-line-height: 24px;
-$heading-five-font-weight: 300;
+$heading-five-font-weight: 700;
 $heading-five-margin: 0 0 0 0;
 
 
@@ -75,7 +75,7 @@ $heading-six-margin: 0 0 0 0;
 // PARAGRAPH
 $paragraph-text-color: $base-text-color;
 $paragraph-font-family: $base-font-family;
-$paragraph-font-size: 16spx;
+$paragraph-font-size: 16px;
 $paragraph-line-height: 24px;
 $paragraph-font-weight: 300;
 $paragraph-margin: 0 0 24px 0;
