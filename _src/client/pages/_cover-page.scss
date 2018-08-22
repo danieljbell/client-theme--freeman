@@ -18,12 +18,12 @@
 }
 
 .freeman-page--dark-cover-page {
-  background-image: url(/img/dark-cover-page-bg.png);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681129_original.png?1534904819);
   @include cover-page(#000);
 }
 
 .freeman-page--brand-cover-page {
-  background-image: url(/img/brand-cover-page-bg.png);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681125_original.png?1534904539);
   @include cover-page($brand);
   &:after {
     opacity: 0.8;

@@ -7,17 +7,17 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-bracket, .pdf-page-content .freeman-bracket { border-top: 1px solid #000; border-left: 4px solid #000; border-right: 1px solid #000; margin: 15px 0 40px; }
 #content_editor .freeman-bracket .freeman-bracket--first, .pdf-page-content .freeman-bracket .freeman-bracket--first, #content_editor .freeman-bracket .freeman-bracket--second, .pdf-page-content .freeman-bracket .freeman-bracket--second { padding: 5px 10px 0 !important; }
 #content_editor .freeman-bracket .freeman-bracket--first, .pdf-page-content .freeman-bracket .freeman-bracket--first { border-right: 1px solid #000; }
-#content_editor .freeman-bracket .freeman-bracket--first img, .pdf-page-content .freeman-bracket .freeman-bracket--first img { max-width: 100px; }
+#content_editor .freeman-bracket .freeman-bracket--first img, .pdf-page-content .freeman-bracket .freeman-bracket--first img { max-width: 100px !important; }
 #content_editor .freeman-bracket--white, .pdf-page-content .freeman-bracket--white { border-top: 1px solid #fff; border-left: 4px solid #fff; border-right: 1px solid #fff; margin: 15px 0 40px; }
 #content_editor .freeman-bracket--white .freeman-bracket--first, .pdf-page-content .freeman-bracket--white .freeman-bracket--first, #content_editor .freeman-bracket--white .freeman-bracket--second, .pdf-page-content .freeman-bracket--white .freeman-bracket--second { padding: 5px 10px 0 !important; }
 #content_editor .freeman-bracket--white .freeman-bracket--first, .pdf-page-content .freeman-bracket--white .freeman-bracket--first { border-right: 1px solid #fff; }
-#content_editor .freeman-bracket--white .freeman-bracket--first img, .pdf-page-content .freeman-bracket--white .freeman-bracket--first img { max-width: 100px; }
-.freeman--full-bg { position: relative; top: -20px; left: -30px; margin-bottom: -20px; width: calc(100% + 60px); padding: 20px 30px; }
+#content_editor .freeman-bracket--white .freeman-bracket--first img, .pdf-page-content .freeman-bracket--white .freeman-bracket--first img { max-width: 100px !important; }
+.freeman--full-bg { position: relative; top: -20px; left: -30px; margin-bottom: -40px; width: calc(100% + 60px); padding: 20px 30px; }
 .freeman-full-bleed { position: relative; left: -30px; width: calc(100% + 60px); padding-left: 30px; padding-right: 30px; }
 .freeman-bg--yellow { background-color: #FFDD00; }
-.freeman-split-page--blue { position: relative; top: -20px; margin-bottom: -20px; padding-top: 20px; padding-bottom: 20px; z-index: 1; }
+.freeman-split-page--blue { position: relative; top: -20px; margin-bottom: -40px; padding-top: 20px; padding-bottom: 20px; z-index: 1; }
 .freeman-split-page--blue:after { content: ''; position: absolute; left: 50%; right: -30px; top: 0; bottom: 0; background-color: #90CFF2; z-index: -1; }
-.freeman-split-page--green { position: relative; top: -20px; margin-bottom: -20px; padding-top: 20px; padding-bottom: 20px; z-index: 1; }
+.freeman-split-page--green { position: relative; top: -20px; margin-bottom: -40px; padding-top: 20px; padding-bottom: 20px; z-index: 1; }
 .freeman-split-page--green:after { content: ''; position: absolute; left: 50%; right: -30px; top: 0; bottom: 0; background-color: #B0D235; z-index: -1; }
 .freeman-pill--dark-blue { background-color: #0066B3; border-radius: 200px; color: #fff; text-align: center; padding-top: 15px !important; padding-bottom: 15px !important; }
 #content_editor .freeman-pill--dark-blue, .pdf-page-content .freeman-pill--dark-blue { font-size: 0.85em; }
@@ -37,9 +37,9 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-cover-letter--signature-block .grid, .pdf-page-content .freeman-cover-letter--signature-block .grid { text-align: left; }
 #content_editor .freeman-cover-letter--name, .pdf-page-content .freeman-cover-letter--name, #content_editor .freeman-cover-letter--title, .pdf-page-content .freeman-cover-letter--title { margin-bottom: 0; font-size: 0.9em !important; }
 #content_editor .freeman-cover-letter--title, .pdf-page-content .freeman-cover-letter--title { font-style: italic; }
-.freeman-page--dark-cover-page { background-image: url(/img/dark-cover-page-bg.png); background-size: cover; background-position: center center; padding-bottom: 350px; position: relative; z-index: 1; }
+.freeman-page--dark-cover-page { background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681129_original.png?1534904819); background-size: cover; background-position: center center; padding-bottom: 350px; position: relative; z-index: 1; }
 .freeman-page--dark-cover-page:after { content: ''; position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 400px; background-color: #000; opacity: 0.5; }
-.freeman-page--brand-cover-page { background-image: url(/img/brand-cover-page-bg.png); background-size: cover; background-position: center center; padding-bottom: 350px; position: relative; z-index: 1; }
+.freeman-page--brand-cover-page { background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681125_original.png?1534904539); background-size: cover; background-position: center center; padding-bottom: 350px; position: relative; z-index: 1; }
 .freeman-page--brand-cover-page:after { content: ''; position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 400px; background-color: #0066B3; opacity: 0.5; }
 .freeman-page--brand-cover-page:after { opacity: 0.8; }
 #content_editor .freeman-page-cover-page--logo-container, .pdf-page-content .freeman-page-cover-page--logo-container { padding: 20px 30px !important; }
@@ -47,14 +47,14 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-page-cover-page--content-container *, .pdf-page-content .freeman-page-cover-page--content-container * { color: #fff !important; }
 #content_editor .freeman-page-cover-page--date, .pdf-page-content .freeman-page-cover-page--date { margin-top: 150px; }
 .freeman-page--quote-bg { background-size: cover; background-position: center; min-height: 500px; display: table; }
-#content_editor .freeman-page--quote-bg h1, .pdf-page-content .freeman-page--quote-bg h1 { display: table-cell; vertical-align: middle; font-size: 42px; line-height: 50px; margin: 0 !important; color: #fff; font-style: italic; font-weight: normal; }
+#content_editor .freeman-page--quote-bg h1, .pdf-page-content .freeman-page--quote-bg h1 { display: table-cell; vertical-align: middle; font-size: 42px !important; line-height: 50px !important; margin: 0 !important; color: #fff !important; font-style: italic; font-weight: normal !important; }
 #content_editor .freeman-page--quote-bg h1 span, .pdf-page-content .freeman-page--quote-bg h1 span { display: block; width: 65%; }
-#content_editor .freeman-page--table-of-contents, .pdf-page-content .freeman-page--table-of-contents { background-image: url("../img/rocket.png"); background-repeat: no-repeat; background-size: 275px; background-position: -35px 150%; min-height: 400px; }
+#content_editor .freeman-page--table-of-contents, .pdf-page-content .freeman-page--table-of-contents { background-image: url("https://mytinder.s3.amazonaws.com/assets/medias/681124_original.png?1534904538"); background-repeat: no-repeat; background-size: 275px; background-position: -35px 150%; min-height: 400px; }
 #content_editor .freeman-table-of-contents--heading, .pdf-page-content .freeman-table-of-contents--heading { font-weight: normal; color: #0066B3; font-style: italic; font-size: 36px; }
 .freeman-table-of-contents--list { counter-reset: toc-items; }
 .freeman-table-of-contents--item { list-style-type: none; position: relative; counter-increment: toc-items; }
 #content_editor .freeman-table-of-contents--item, .pdf-page-content .freeman-table-of-contents--item { color: #0066B3; font-style: italic; margin-bottom: 15px; font-size: 20px; }
-.freeman-table-of-contents--item:before { content: counter(toc-items) "."; position: absolute; left: -20px; top: -5px; font-size: 24px; color: #000; }
+.freeman-table-of-contents--item:before { content: counter(toc-items) "."; position: absolute; left: -27px; top: 0px; font-size: 24px; color: #000; }
 #content_editor .freeman-table-of-contents--item span, .pdf-page-content .freeman-table-of-contents--item span { float: right; }
 #content_editor .freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center p, .pdf-page-content .freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center p { font-size: 0.85em; font-style: italic; }
 .freeman-page--what-you-can-expect .freeman-full-bleed .freeman-has-text-center img { max-width: 100px; max-height: 100px; }
@@ -62,7 +62,12 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-branch-profile, .pdf-page-content .freeman-branch-profile { padding-left: 20px !important; }
 #content_editor .freeman-branch-profile *, .pdf-page-content .freeman-branch-profile * { color: #fff; }
 #content_editor .freeman-branch-profile hr, .pdf-page-content .freeman-branch-profile hr { background-color: transparent; border: 0; border-top: 1px solid #fff; margin: 18px 0; }
-#content_editor .freeman-page--team .freeman-team-member img, .pdf-page-content .freeman-page--team .freeman-team-member img { max-width: 140px; max-width: 140px; }
+#content_editor .freeman-page--team .freeman-team-member img, .pdf-page-content .freeman-page--team .freeman-team-member img { max-width: 140px !important; max-height: 130px !important; }
+.freeman-page--audience { padding-top: 150px; padding-bottom: 150px; background-size: cover; background-position: center center; }
+#content_editor .freeman-page--audience h1, .pdf-page-content .freeman-page--audience h1, #content_editor .freeman-page--audience p, .pdf-page-content .freeman-page--audience p { max-width: 350px; margin-left: auto !important; color: #fff !important; }
+#content_editor .freeman-page--audience h1, .pdf-page-content .freeman-page--audience h1 { font-size: 1.15em !important; line-height: 1.1 !important; margin-bottom: 15px !important; }
+.freeman-page--logo-page { min-height: 500px; display: table; width: calc(100% + 60px); }
+.freeman-page--logo-page > * { display: table-cell !important; vertical-align: middle; }
 .freeman-has-text-white { color: #fff !important; }
 .freeman-has-text-brand { color: #0066B3 !important; }
 .freeman-has-text-brand-two { color: #FFDD00 !important; }

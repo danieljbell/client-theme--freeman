@@ -1,7 +1,7 @@
 .freeman-page--table-of-contents {
   #content_editor &,
   .pdf-page-content & {
-    background-image: url('../img/rocket.png');
+    background-image: url('https://mytinder.s3.amazonaws.com/assets/medias/681124_original.png?1534904538');
     background-repeat: no-repeat;
     background-size: 275px;
     background-position: -35px 150%;
@@ -41,8 +41,8 @@
   &:before {
     content: counter(toc-items)'.';
     position: absolute;
-    left: -20px;
-    top: -5px;
+    left: -27px;
+    top: 0px;
     font-size: 24px;
     color: #000;
   }
