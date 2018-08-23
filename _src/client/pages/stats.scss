@@ -1,3 +1,9 @@
+.freeman-page--stats {
+  @include print {
+    min-height: 11in;
+  }
+}
+
 .freeman-page--stats .freeman-has-text-white {
   text-shadow: 3px 3px 8px rgba(black, 0.3);
 }

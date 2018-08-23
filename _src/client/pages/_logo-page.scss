@@ -1,9 +1,11 @@
 .freeman-page--logo-page {
   min-height: 500px;
-  display: table;
   width: calc(100% + 60px);
+  position: relative;
   > * {
-    display: table-cell !important;
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

@@ -5,6 +5,12 @@
     .grid {
       text-align: left;
     }
+    img {
+      max-width: 350px !important;
+      @include print {
+        max-width: 3in !important;
+      }
+    }
   }
 }
 

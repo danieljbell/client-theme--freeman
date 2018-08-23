@@ -68,3 +68,52 @@
   max-width: 100px;
   max-height: 100px;
 }
+
+.table-of-contents {
+  @include print {
+    position: relative;
+    left: -1in;
+    top: -1in;
+    width: 8.5in;
+    min-height: 11in;
+    background-image: url('https://mytinder.s3.amazonaws.com/assets/medias/681414_original.jpg?1534994480');
+    background-position: bottom left;
+    background-size: 8.5in;
+    background-repeat: no-repeat;
+    padding: 1.5in 1in 1in;
+    
+    h1 {
+      color: #fff;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 0.5in;
+        left: 0;
+        content: 'contents';
+        color: $brand;
+        font-size: 1.35em;
+        font-style: italic;
+      }
+    }
+
+    > ul {
+      counter-reset: print-toc-items;
+      max-width: 4.25in;
+      margin-left: auto;;
+
+      li {
+        counter-increment: print-toc-items;
+        font-size: 1.1em;
+        margin-bottom: 0.125in;
+        &:before {
+          content: counter(print-toc-items)'.';
+        }
+        ul {
+          display: none;
+        }
+      }
+
+    }
+
+  }
+}

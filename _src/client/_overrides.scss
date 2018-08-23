@@ -2,6 +2,12 @@
 // TYPOGRAPHY
 // ===================
 
+#content_editor ul,
+#content_editor ol,
+#content_editor li {
+  font-family: $base-font-family;
+}
+
 // #content_editor h1,
 // .pdf-page-content h1 {
 //   text-transform: uppercase;

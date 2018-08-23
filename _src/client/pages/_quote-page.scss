@@ -1,13 +1,18 @@
 .freeman-page--quote-bg {
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   min-height: 500px;
-  display: table;
+  position: relative;
+  @include print {
+    min-height: 11in;
+  }
 
   h1 {
     #content_editor &,
     .pdf-page-content & {
-      display: table-cell;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       vertical-align: middle;
       font-size: 42px !important;
       line-height: 50px !important;

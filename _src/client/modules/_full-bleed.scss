@@ -5,6 +5,12 @@
   margin-bottom: -40px;
   width: calc(100% + 60px);
   padding: 20px 30px;
+  @include print {
+    top: -1in;
+    left: -1in;
+    width: 8.5in;
+    padding: 1in;
+  }
 }
 
 .freeman-full-bleed {
@@ -13,6 +19,12 @@
   width: calc(100% + 60px);
   padding-left: 30px;
   padding-right: 30px;
+  @include print {
+    left: -1in;
+    width: 8.5in;
+    padding-left: 1in;
+    padding-right: 1in;
+  }
 }
 
 .freeman-bg--yellow {
@@ -35,7 +47,16 @@
     bottom: 0;
     background-color: $color;
     z-index: -1;
+    @include print {
+      right: -1in;
+    }
   }
+
+  @include print {
+    top: -1in;
+    padding-top: 1in;
+  }
+
 }
 
 .freeman-split-page--blue {

@@ -4,11 +4,11 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 =================================================================
 */
 #content_editor .freeman-bracket--second, .pdf-page-content .freeman-bracket--second { text-align: right; text-transform: uppercase; color: #0066B3; font-style: italic; font-size: 0.85em !important; }
-#content_editor .freeman-bracket, .pdf-page-content .freeman-bracket { border-top: 1px solid #000; border-left: 4px solid #000; border-right: 1px solid #000; margin: 15px 0 40px; }
+#content_editor .freeman-bracket, .pdf-page-content .freeman-bracket { position: relative; z-index: 100; border-top: 1px solid #000; border-left: 4px solid #000; border-right: 1px solid #000; margin: 15px 0 40px; }
 #content_editor .freeman-bracket .freeman-bracket--first, .pdf-page-content .freeman-bracket .freeman-bracket--first, #content_editor .freeman-bracket .freeman-bracket--second, .pdf-page-content .freeman-bracket .freeman-bracket--second { padding: 5px 10px 0 !important; }
 #content_editor .freeman-bracket .freeman-bracket--first, .pdf-page-content .freeman-bracket .freeman-bracket--first { border-right: 1px solid #000; }
 #content_editor .freeman-bracket .freeman-bracket--first img, .pdf-page-content .freeman-bracket .freeman-bracket--first img { max-width: 100px !important; }
-#content_editor .freeman-bracket--white, .pdf-page-content .freeman-bracket--white { border-top: 1px solid #fff; border-left: 4px solid #fff; border-right: 1px solid #fff; margin: 15px 0 40px; }
+#content_editor .freeman-bracket--white, .pdf-page-content .freeman-bracket--white { position: relative; z-index: 100; border-top: 1px solid #fff; border-left: 4px solid #fff; border-right: 1px solid #fff; margin: 15px 0 40px; }
 #content_editor .freeman-bracket--white .freeman-bracket--first, .pdf-page-content .freeman-bracket--white .freeman-bracket--first, #content_editor .freeman-bracket--white .freeman-bracket--second, .pdf-page-content .freeman-bracket--white .freeman-bracket--second { padding: 5px 10px 0 !important; }
 #content_editor .freeman-bracket--white .freeman-bracket--first, .pdf-page-content .freeman-bracket--white .freeman-bracket--first { border-right: 1px solid #fff; }
 #content_editor .freeman-bracket--white .freeman-bracket--first img, .pdf-page-content .freeman-bracket--white .freeman-bracket--first img { max-width: 100px !important; }
@@ -33,8 +33,15 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-pills > li, .pdf-page-content .freeman-pills > li { margin-bottom: 10px; }
 #content_editor .freeman-pills > li > div:first-child, .pdf-page-content .freeman-pills > li > div:first-child { font-size: 1.2em; text-align: right; }
 #content_editor .freeman-stat span, .pdf-page-content .freeman-stat span { font-size: 2em !important; }
+#content_editor .freeman-event-list, .pdf-page-content .freeman-event-list { list-style-type: none; padding-left: 40px !important; counter-reset: event-items; }
+.freeman-event-item { position: relative; left: 35px; max-width: 125px; margin-left: auto; margin-right: auto; margin-bottom: 30px; counter-increment: event-items; }
+#content_editor .freeman-event-item, .pdf-page-content .freeman-event-item { font-size: 0.8em !important; line-height: 1.3; color: #fff; }
+.freeman-event-item:before { content: 'Event'; position: absolute; right: 175px; text-transform: uppercase; top: 36px; font-weight: bold; color: #fff; font-size: 0.8em; }
+.freeman-event-item:after { content: counter(event-items); position: absolute; right: 106%; text-transform: uppercase; font-size: 60px; top: -10px; color: #0066B3; }
+.freeman-event-item strong { font-size: 1.2em; }
 #content_editor .freeman-cover-letter--signature-block, .pdf-page-content .freeman-cover-letter--signature-block { text-align: right; }
 #content_editor .freeman-cover-letter--signature-block .grid, .pdf-page-content .freeman-cover-letter--signature-block .grid { text-align: left; }
+#content_editor .freeman-cover-letter--signature-block img, .pdf-page-content .freeman-cover-letter--signature-block img { max-width: 350px !important; }
 #content_editor .freeman-cover-letter--name, .pdf-page-content .freeman-cover-letter--name, #content_editor .freeman-cover-letter--title, .pdf-page-content .freeman-cover-letter--title { margin-bottom: 0; font-size: 0.9em !important; }
 #content_editor .freeman-cover-letter--title, .pdf-page-content .freeman-cover-letter--title { font-style: italic; }
 .freeman-page--dark-cover-page { background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681129_original.png?1534904819); background-size: cover; background-position: center center; padding-bottom: 350px; position: relative; z-index: 1; }
@@ -46,8 +53,8 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-page-cover-page--content-container, .pdf-page-content .freeman-page-cover-page--content-container { border-left: 1px solid rgba(255, 255, 255, 0.5); padding: 20px 40px 0 !important; }
 #content_editor .freeman-page-cover-page--content-container *, .pdf-page-content .freeman-page-cover-page--content-container * { color: #fff !important; }
 #content_editor .freeman-page-cover-page--date, .pdf-page-content .freeman-page-cover-page--date { margin-top: 150px; }
-.freeman-page--quote-bg { background-size: cover; background-position: center; min-height: 500px; display: table; }
-#content_editor .freeman-page--quote-bg h1, .pdf-page-content .freeman-page--quote-bg h1 { display: table-cell; vertical-align: middle; font-size: 42px !important; line-height: 50px !important; margin: 0 !important; color: #fff !important; font-style: italic; font-weight: normal !important; }
+.freeman-page--quote-bg { background-size: cover; background-position: right center; min-height: 500px; position: relative; }
+#content_editor .freeman-page--quote-bg h1, .pdf-page-content .freeman-page--quote-bg h1 { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); vertical-align: middle; font-size: 42px !important; line-height: 50px !important; margin: 0 !important; color: #fff !important; font-style: italic; font-weight: normal !important; }
 #content_editor .freeman-page--quote-bg h1 span, .pdf-page-content .freeman-page--quote-bg h1 span { display: block; width: 65%; }
 #content_editor .freeman-page--table-of-contents, .pdf-page-content .freeman-page--table-of-contents { background-image: url("https://mytinder.s3.amazonaws.com/assets/medias/681124_original.png?1534904538"); background-repeat: no-repeat; background-size: 275px; background-position: -35px 150%; min-height: 400px; }
 #content_editor .freeman-table-of-contents--heading, .pdf-page-content .freeman-table-of-contents--heading { font-weight: normal; color: #0066B3; font-style: italic; font-size: 36px; }
@@ -62,12 +69,15 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 #content_editor .freeman-branch-profile, .pdf-page-content .freeman-branch-profile { padding-left: 20px !important; }
 #content_editor .freeman-branch-profile *, .pdf-page-content .freeman-branch-profile * { color: #fff; }
 #content_editor .freeman-branch-profile hr, .pdf-page-content .freeman-branch-profile hr { background-color: transparent; border: 0; border-top: 1px solid #fff; margin: 18px 0; }
+.freeman-page--branch-profile .unit.half:first-child { padding-right: 40px !important; }
 #content_editor .freeman-page--team .freeman-team-member img, .pdf-page-content .freeman-page--team .freeman-team-member img { max-width: 140px !important; max-height: 130px !important; }
 .freeman-page--audience { padding-top: 150px; padding-bottom: 150px; background-size: cover; background-position: center center; }
 #content_editor .freeman-page--audience h1, .pdf-page-content .freeman-page--audience h1, #content_editor .freeman-page--audience p, .pdf-page-content .freeman-page--audience p { max-width: 350px; margin-left: auto !important; color: #fff !important; }
 #content_editor .freeman-page--audience h1, .pdf-page-content .freeman-page--audience h1 { font-size: 1.15em !important; line-height: 1.1 !important; margin-bottom: 15px !important; }
-.freeman-page--logo-page { min-height: 500px; display: table; width: calc(100% + 60px); }
-.freeman-page--logo-page > * { display: table-cell !important; vertical-align: middle; }
+.freeman-page--logo-page { min-height: 500px; width: calc(100% + 60px); position: relative; }
+.freeman-page--logo-page > * { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.freeman-page--events .unit.half:first-child { padding-right: 40px !important; }
+#content_editor ul, #content_editor ol, #content_editor li { font-family: "Arial"; }
 .freeman-has-text-white { color: #fff !important; }
 .freeman-has-text-brand { color: #0066B3 !important; }
 .freeman-has-text-brand-two { color: #FFDD00 !important; }
@@ -98,6 +108,13 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--freeman
 .freeman-mar-r { margin-right: 30px !important; }
 .freeman-mar-r-more { margin-right: 60px !important; }
 .freeman-b-a { border: 1px solid #fff; }
+@media print { .freeman--full-bg { top: -1in; left: -1in; width: 8.5in; padding: 1in; } .freeman-full-bleed { left: -1in; width: 8.5in; padding-left: 1in; padding-right: 1in; } .freeman-split-page--blue:after { right: -1in; } .freeman-split-page--blue { top: -1in; padding-top: 1in; } .freeman-split-page--green:after { right: -1in; } .freeman-split-page--green { top: -1in; padding-top: 1in; } #content_editor .freeman-cover-letter--signature-block img, .pdf-page-content .freeman-cover-letter--signature-block img { max-width: 3in !important; } .freeman-page--dark-cover-page:after { display: none; } .freeman-page--dark-cover-page { min-height: 11in; } .freeman-page--dark-cover-page { background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681410_original.jpg?1534991023); } .freeman-page--brand-cover-page:after { display: none; } .freeman-page--brand-cover-page { min-height: 11in; } .freeman-page--brand-cover-page { background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681411_original.png?1534991376); } #content_editor .freeman-page-cover-page--logo-container img, .pdf-page-content .freeman-page-cover-page--logo-container img { display: block !important; max-width: 1in !important; margin: 0 auto !important; } #content_editor .freeman-page-cover-page--content-container, .pdf-page-content .freeman-page-cover-page--content-container { padding: 1in !important; } .freeman-page--quote-bg { min-height: 11in; } .table-of-contents { position: relative; left: -1in; top: -1in; width: 8.5in; min-height: 11in; background-image: url("https://mytinder.s3.amazonaws.com/assets/medias/681414_original.jpg?1534994480"); background-position: bottom left; background-size: 8.5in; background-repeat: no-repeat; padding: 1.5in 1in 1in; }
+  .table-of-contents h1 { color: #fff; position: relative; }
+  .table-of-contents h1:before { position: absolute; top: 0.5in; left: 0; content: 'contents'; color: #0066B3; font-size: 1.35em; font-style: italic; }
+  .table-of-contents > ul { counter-reset: print-toc-items; max-width: 4.25in; margin-left: auto; }
+  .table-of-contents > ul li { counter-increment: print-toc-items; font-size: 1.1em; margin-bottom: 0.125in; }
+  .table-of-contents > ul li:before { content: counter(print-toc-items) "."; }
+  .table-of-contents > ul li ul { display: none; } .freeman-page--stats { min-height: 11in; } }
 @media screen and (max-width: 735px) { #content_editor .freeman-pills > li > div:first-child, .pdf-page-content .freeman-pills > li > div:first-child { text-align: center; } }
 @media screen and (max-width: 568px) { .freeman-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
 

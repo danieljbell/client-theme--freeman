@@ -1,17 +1,22 @@
-
-
 .freeman-branch-profile {
   #content_editor &,
   .pdf-page-content & {
     padding-left: 20px !important;
+    
     * {
       color: #fff;
     }
+    
     hr {
       background-color: transparent;
       border: 0;
       border-top: 1px solid #fff;
       margin: 18px 0;
     }
+
   }
+}
+
+.freeman-page--branch-profile .unit.half:first-child {
+  padding-right: 40px !important;
 }

@@ -14,12 +14,21 @@
     height: 400px;
     background-color: $overlay-color;
     opacity: 0.5;
+    @include print {
+      display: none;
+    }
+  }
+  @include print {
+    min-height: 11in;
   }
 }
 
 .freeman-page--dark-cover-page {
   background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681129_original.png?1534904819);
   @include cover-page(#000);
+  @include print {
+    background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681410_original.jpg?1534991023);
+  }
 }
 
 .freeman-page--brand-cover-page {
@@ -28,12 +37,22 @@
   &:after {
     opacity: 0.8;
   }
+  @include print {
+    background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/681411_original.png?1534991376);
+  }
 }
 
 .freeman-page-cover-page--logo-container {
   #content_editor &,
   .pdf-page-content & {
     padding: 20px 30px !important;
+    @include print {
+      img {
+        display: block !important;
+        max-width: 1in !important;
+        margin: 0 auto !important;
+      }
+    }
   }
 }
 
@@ -44,6 +63,9 @@
     padding: 20px 40px 0 !important;
     * {
       color: #fff !important;
+    }
+    @include print {
+      padding: 1in !important;
     }
   }
 }

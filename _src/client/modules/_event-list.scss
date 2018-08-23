@@ -1,0 +1,53 @@
+.freeman-event-list {
+
+  #content_editor &,
+  .pdf-page-content & {
+    list-style-type: none;
+    padding-left: 40px !important;
+    counter-reset: event-items;
+  }
+
+}
+
+.freeman-event-item {
+  position: relative;
+  left: 35px;
+  max-width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  counter-increment: event-items;
+
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.8em !important;
+    line-height: 1.3;
+    color: #fff;
+  }
+  
+  &:before {
+    content: 'Event';
+    position: absolute;
+    right: 175px;
+    text-transform: uppercase;
+    top: 36px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
+  }
+
+  &:after {
+    content: counter(event-items);
+    position: absolute;
+    right: 106%;
+    text-transform: uppercase;
+    font-size: 60px;
+    top: -10px;
+    color: $brand;
+  }
+
+  strong {
+    font-size: 1.2em;
+  }
+
+}

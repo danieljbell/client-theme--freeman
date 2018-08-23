@@ -2,12 +2,11 @@
 
   #content_editor &,
   .pdf-page-content & {
-    // display: table;
-    // width: 100%;
+    position: relative;
+    z-index: 100;
     border-top: 1px solid $border-color;
     border-left: 4px solid $border-color;
     border-right: 1px solid $border-color;
-    // padding: 0 8px;
     margin: 15px 0 40px;
   }
 
